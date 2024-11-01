@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        margin-top: 30px;
+    }
+
+    .container h1 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .container p {
+        display: flex;
+
+    }
+
+    #numQ {
+        display: flex;
+    }
+
+    #btn {
+        display: grid;
+        justify-content: end;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="btn">
+            <button onclick="ADDQ()">add question</button>
+        </div>
+
+        <body>
+            <div id="addQ">
+                <div>
+                    <input id="Q" class="form-control form-control-lg" type="text" placeholder=".form-control-lg"
+                        aria-label=".form-control-lg example">
+                    <input iq="A" class="form-control" type="text" placeholder="Default input"
+                        aria-label="default input example">
+                    <input onclick="displayQ" type="submit" value="Add Quetion">
+                
+                </div>
+
+            </div>
+    </div>
+    <div class="container">
+        <h1>Foire aux quetion.</h1>
+        <div id="numQ">
+            <p>number of quetions :</p>
+            <p id="NQ">0</p>
+        </div>
+        <div id="QQQQ">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p id="q"></p>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p id="a"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        <script>
+
+            let z = "";
+            var Questions = [{
+            question : ,
+            answers :,
+            },
+            
+            ];
+             Questions.length=0;
+             let i=0;
+            for(  i=0 ;i< Questions.length ; i++)
+             function fillarray(){
+                   Questions[i].question=get
+             }
+
+            function displayQ() {
+                var Y = document.getElementById("QQQQ");
+                if ( Questions.length == 0 ) {
+                    Y.style.display = "none";
+                } else {
+                    Y.style.display = "block";
+                }
+            }
+
+            function ADDQ() {
+                var x = document.getElementById("addQ");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+        </script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
